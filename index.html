@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Henric Studio - Premium creative agency specializing in branding, design, and digital experiences">
+    <title>Henric Studio | Premium Creative Agency</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="fonts/NeueHaasDisplay-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__inner">
+            <div class="preloader__logo">H</div>
+            <div class="preloader__progress"></div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="header__logo" aria-label="Henric Studio Home">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#000"/>
+                    <path d="M18.5 32V16H22.5V28H28.5V32H18.5Z" fill="#fff"/>
+                </svg>
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#blog" class="nav__link">Journal</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="header__menu-btn" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero__content">
+            <h1 class="hero__title">
+                <span class="hero__title-line">Crafting</span>
+                <span class="hero__title-line">Extraordinary</span>
+                <span class="hero__title-line">Brand Experiences</span>
+            </h1>
+            <p class="hero__subtitle">Henric Studio is a premium creative agency specializing in branding, design, and digital experiences for discerning clients worldwide.</p>
+            <a href="#contact" class="btn btn--primary">Start Your Project</a>
+        </div>
+        
+        <div class="hero__scroll-indicator">
+            <span>Scroll</span>
+            <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 0V18M6 18L11 13M6 18L1 13" stroke="currentColor" stroke-width="2"/>
+            </svg>
+        </div>
+        
+        <div class="hero__background">
+            <div class="hero__bg-overlay"></div>
+            <div class="hero__bg-image" data-parallax="0.3"></div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Our Story</span>
+                <h2 class="section__title">Crafting Excellence Since 2012</h2>
+            </div>
+            
+            <div class="about__content">
+                <div class="about__text">
+                    <p>Founded in Stockholm, Henric Studio has grown from a boutique design firm to an internationally recognized creative agency. Our journey has been marked by relentless pursuit of aesthetic perfection and meaningful brand narratives.</p>
+                    <p>We believe in the power of thoughtful design to elevate brands and create lasting impressions. Our approach combines Scandinavian minimalism with global perspectives to deliver timeless solutions.</p>
+                    <div class="stats">
+                        <div class="stats__item">
+                            <div class="stats__number" data-count="150">0</div>
+                            <div class="stats__label">Projects Completed</div>
+                        </div>
+                        <div class="stats__item">
+                            <div class="stats__number" data-count="28">0</div>
+                            <div class="stats__label">Countries Reached</div>
+                        </div>
+                        <div class="stats__item">
+                            <div class="stats__number" data-count="12">0</div>
+                            <div class="stats__label">Industry Awards</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about__image">
+                    <div class="about__img-container">
+                        <img src="images/about-studio.jpg" alt="Henric Studio workspace" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team">
+                <h3 class="team__title">Meet Our Creative Minds</h3>
+                
+                <div class="team__grid">
+                    <div class="team__member">
+                        <div class="team__member-img">
+                            <img src="images/team-1.jpg" alt="Emma Johansson" loading="lazy">
+                        </div>
+                        <h4 class="team__member-name">Emma Johansson</h4>
+                        <p class="team__member-role">Creative Director</p>
+                    </div>
+                    
+                    <div class="team__member">
+                        <div class="team__member-img">
+                            <img src="images/team-2.jpg" alt="Lukas Bergman" loading="lazy">
+                        </div>
+                        <h4 class="team__member-name">Lukas Bergman</h4>
+                        <p class="team__member-role">Lead Designer</p>
+                    </div>
+                    
+                    <div class="team__member">
+                        <div class="team__member-img">
+                            <img src="images/team-3.jpg" alt="Sophia Chen" loading="lazy">
+                        </div>
+                        <h4 class="team__member-name">Sophia Chen</h4>
+                        <p class="team__member-role">Art Director</p>
+                    </div>
+                    
+                    <div class="team__member">
+                        <div class="team__member-img">
+                            <img src="images/team-4.jpg" alt="Anders Nilsson" loading="lazy">
+                        </div>
+                        <h4 class="team__member-name">Anders Nilsson</h4>
+                        <p class="team__member-role">Digital Strategist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">What We Offer</span>
+                <h2 class="section__title">Our Specialized Services</h2>
+            </div>
+            
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 16V32M16 24H32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Brand Strategy</h3>
+                    <p class="service-card__description">Comprehensive brand positioning and identity development to differentiate your business in competitive markets.</p>
+                    <a href="#" class="service-card__link">Learn more</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="8" width="32" height="32" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 16L32 32M16 32L32 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Visual Identity</h3>
+                    <p class="service-card__description">Distinctive logo design, typography, color systems, and visual language that communicates your brand essence.</p>
+                    <a href="#" class="service-card__link">Learn more</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H44M8 12V36C8 37.1046 8.89543 38 10 38H38C39.1046 38 40 37.1046 40 36V12" stroke="currentColor" stroke-width="2"/>
+                            <rect x="16" y="20" width="16" height="10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Digital Design</h3>
+                    <p class="service-card__description">Beautiful, functional websites and digital experiences designed for engagement and conversion.</p>
+                    <a href="#" class="service-card__link">Learn more</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44C35.0457 44 44 35.0457 44 24Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 12V24L32 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Content Creation</h3>
+                    <p class="service-card__description">Premium photography, videography, and copywriting that tells your brand story with authenticity.</p>
+                    <a href="#" class="service-card__link">Learn more</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 16V24L28 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Packaging Design</h3>
+                    <p class="service-card__description">Innovative structural and graphic packaging solutions that create shelf impact and brand recognition.</p>
+                    <a href="#" class="service-card__link">Learn more</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 12H44M8 12V36C8 37.1046 8.89543 38 10 38H38C39.1046 38 40 37.1046 40 36V12" stroke="currentColor" stroke-width="2"/>
+                            <rect x="16" y="20" width="16" height="10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Art Direction</h3>
+                    <p class="service-card__description">Cohesive visual storytelling across all touchpoints to create memorable brand experiences.</p>
+                    <a href="#" class="service-card__link">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Our Work</span>
+                <h2 class="section__title">Selected Projects</h2>
+            </div>
+            
+            <div class="portfolio__filters">
+                <button class="portfolio__filter active" data-filter="all">All</button>
+                <button class="portfolio__filter" data-filter="branding">Branding</button>
+                <button class="portfolio__filter" data-filter="digital">Digital</button>
+                <button class="portfolio__filter" data-filter="packaging">Packaging</button>
+                <button class="portfolio__filter" data-filter="art-direction">Art Direction</button>
+            </div>
+            
+            <div class="portfolio__grid">
+                <div class="portfolio__item" data-category="branding">
+                    <div class="portfolio__item-inner">
+                        <div class="portfolio__image">
+                            <img src="images/portfolio-1.jpg" alt="Nordic Watches Brand Identity" loading="lazy">
+                        </div>
+                        <div class="portfolio__overlay">
+                            <h3 class="portfolio__title">Nordic Watches</h3>
+                            <p class="portfolio__category">Brand Identity</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio__item" data-category="digital">
+                    <div class="portfolio__item-inner">
+                        <div class="portfolio__image">
+                            <img src="images/portfolio-2.jpg" alt="Lumina Website Design" loading="lazy">
+                        </div>
+                        <div class="portfolio__overlay">
+                            <h3 class="portfolio__title">Lumina</h3>
+                            <p class="portfolio__category">Website Design</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio__item" data-category="packaging">
+                    <div class="portfolio__item-inner">
+                        <div class="portfolio__image">
+                            <img src="images/portfolio-3.jpg" alt="Aesir Spirits Packaging" loading="lazy">
+                        </div>
+                        <div class="portfolio__overlay">
+                            <h3 class="portfolio__title">Aesir Spirits</h3>
+                            <p class="portfolio__category">Packaging Design</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio__item" data-category="art-direction">
+                    <div class="portfolio__item-inner">
+                        <div class="portfolio__image">
+                            <img src="images/portfolio-4.jpg" alt="Haven Campaign" loading="lazy">
+                        </div>
+                        <div class="portfolio__overlay">
+                            <h3 class="portfolio__title">Haven</h3>
+                            <p class="portfolio__category">Art Direction</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio__item" data-category="branding">
+                    <div class="portfolio__item-inner">
+                        <div class="portfolio__image">
+                            <img src="images/portfolio-5.jpg" alt="Monocle Brand Refresh" loading="lazy">
+                        </div>
+                        <div class="portfolio__overlay">
+                            <h3 class="portfolio__title">Monocle</h3>
+                            <p class="portfolio__category">Brand Refresh</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio__item" data-category="digital">
+                    <div class="portfolio__item-inner">
+                        <div class="portfolio__image">
+                            <img src="images/portfolio-6.jpg" alt="Elysium App Design" loading="lazy">
+                        </div>
+                        <div class="portfolio__overlay">
+                            <h3 class="portfolio__title">Elysium</h3>
+                            <p class="portfolio__category">App Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio__cta">
+                <a href="#" class="btn btn--outline">View All Projects</a>
+            </div>
+        </div>
+        
+        <!-- Portfolio Lightbox -->
+        <div class="portfolio-lightbox">
+            <div class="portfolio-lightbox__inner">
+                <button class="portfolio-lightbox__close" aria-label="Close lightbox">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                
+                <div class="portfolio-lightbox__content">
+                    <div class="portfolio-lightbox__image">
+                        <img src="" alt="" id="lightbox-image">
+                    </div>
+                    
+                    <div class="portfolio-lightbox__details">
+                        <h3 class="portfolio-lightbox__title" id="lightbox-title"></h3>
+                        <p class="portfolio-lightbox__category" id="lightbox-category"></p>
+                        <p class="portfolio-lightbox__description" id="lightbox-description"></p>
+                        <a href="#" class="btn btn--primary" id="lightbox-link">View Case Study</a>
+                    </div>
+                </div>
+                
+                <button class="portfolio-lightbox__nav portfolio-lightbox__nav--prev" aria-label="Previous project">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                
+                <button class="portfolio-lightbox__nav portfolio-lightbox__nav--next" aria-label="Next project">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Client Voices</span>
+                <h2 class="section__title">What Our Clients Say</h2>
+            </div>
+            
+            <div class="testimonials__slider">
+                <div class="testimonials__track">
+                    <div class="testimonial">
+                        <div class="testimonial__content">
+                            <div class="testimonial__quote">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 20C16 16.6863 18.6863 14 22 14H26C29.3137 14 32 16.6863 32 20V28C32 31.3137 29.3137 34 26 34H22C18.6863 34 16 31.3137 16 28V20Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M16 20H12C8.68629 20 6 17.3137 6 14V12C6 8.68629 8.68629 6 12 6H18C21.3137 6 24 8.68629 24 12V20" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M32 20H36C39.3137 20 42 17.3137 42 14V12C42 8.68629 39.3137 6 36 6H30C26.6863 6 24 8.68629 24 12V20" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <p class="testimonial__text">Working with Henric Studio transformed our brand perception in the market. Their strategic approach to our visual identity elevated us to a premium position in our industry.</p>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author-img">
+                                    <img src="images/client-1.jpg" alt="Sarah Jensen" loading="lazy">
+                                </div>
+                                <div class="testimonial__author-info">
+                                    <h4 class="testimonial__author-name">Sarah Jensen</h4>
+                                    <p class="testimonial__author-role">CEO, Nordic Watches</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial__content">
+                            <div class="testimonial__quote">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 20C16 16.6863 18.6863 14 22 14H26C29.3137 14 32 16.6863 32 20V28C32 31.3137 29.3137 34 26 34H22C18.6863 34 16 31.3137 16 28V20Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M16 20H12C8.68629 20 6 17.3137 6 14V12C6 8.68629 8.68629 6 12 6H18C21.3137 6 24 8.68629 24 12V20" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M32 20H36C39.3137 20 42 17.3137 42 14V12C42 8.68629 39.3137 6 36 6H30C26.6863 6 24 8.68629 24 12V20" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <p class="testimonial__text">The packaging design Henric created for our spirits collection exceeded all expectations. It perfectly captured our brand's heritage while feeling completely contemporary.</p>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author-img">
+                                    <img src="images/client-2.jpg" alt="Marcus Lindgren" loading="lazy">
+                                </div>
+                                <div class="testimonial__author-info">
+                                    <h4 class="testimonial__author-name">Marcus Lindgren</h4>
+                                    <p class="testimonial__author-role">Founder, Aesir Spirits</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial__content">
+                            <div class="testimonial__quote">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 20C16 16.6863 18.6863 14 22 14H26C29.3137 14 32 16.6863 32 20V28C32 31.3137 29.3137 34 26 34H22C18.6863 34 16 31.3137 16 28V20Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M16 20H12C8.68629 20 6 17.3137 6 14V12C6 8.68629 8.68629 6 12 6H18C21.3137 6 24 8.68629 24 12V20" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M32 20H36C39.3137 20 42 17.3137 42 14V12C42 8.68629 39.3137 6 36 6H30C26.6863 6 24 8.68629 24 12V20" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <p class="testimonial__text">From initial concept to final execution, Henric Studio demonstrated an exceptional understanding of our vision. Their digital design work increased our conversion rate by 40%.</p>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author-img">
+                                    <img src="images/client-3.jpg" alt="Elena Petrova" loading="lazy">
+                                </div>
+                                <div class="testimonial__author-info">
+                                    <h4 class="testimonial__author-name">Elena Petrova</h4>
+                                    <p class="testimonial__author-role">CMO, Lumina</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial__content">
+                            <div class="testimonial__quote">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 20C16 16.6863 18.6863 14 22 14H26C29.3137 14 32 16.6863 32 20V28C32 31.3137 29.3137 34 26 34H22C18.6863 34 16 31.3137 16 28V20Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M16 20H12C8.68629 20 6 17.3137 6 14V12C6 8.68629 8.68629 6 12 6H18C21.3137 6 24 8.68629 24 12V20" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M32 20H36C39.3137 20 42 17.3137 42 14V12C42 8.68629 39.3137 6 36 6H30C26.6863 6 24 8.68629 24 12V20" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <p class="testimonial__text">The art direction for our campaign was nothing short of spectacular. Henric Studio's ability to translate abstract concepts into compelling visuals is unparalleled.</p>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author-img">
+                                    <img src="images/client-4.jpg" alt="James Wilson" loading="lazy">
+                                </div>
+                                <div class="testimonial__author-info">
+                                    <h4 class="testimonial__author-name">James Wilson</h4>
+                                    <p class="testimonial__author-role">Creative Director, Haven</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials__controls">
+                    <button class="testimonials__control testimonials__control--prev" aria-label="Previous testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="testimonials__pagination"></div>
+                    <button class="testimonials__control testimonials__control--next" aria-label="Next testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Blog Section -->
+    <section id="blog" class="section blog">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Insights</span>
+                <h2 class="section__title">From Our Journal</h2>
+            </div>
+            
+            <div class="blog__grid">
+                <article class="blog-card">
+                    <div class="blog-card__image">
+                        <img src="images/blog-1.jpg" alt="The Psychology of Luxury Branding" loading="lazy">
+                        <span class="blog-card__category">Branding</span>
+                    </div>
+                    <div class="blog-card__content">
+                        <time datetime="2023-05-15" class="blog-card__date">May 15, 2023</time>
+                        <h3 class="blog-card__title">The Psychology of Luxury Branding</h3>
+                        <p class="blog-card__excerpt">Exploring how premium brands create emotional connections through design principles and storytelling techniques.</p>
+                        <a href="#" class="blog-card__link">Read Article</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-card__image">
+                        <img src="images/blog-2.jpg" alt="Minimalism in Digital Design" loading="lazy">
+                        <span class="blog-card__category">Design</span>
+                    </div>
+                    <div class="blog-card__content">
+                        <time datetime="2023-04-28" class="blog-card__date">April 28, 2023</time>
+                        <h3 class="blog-card__title">Minimalism in Digital Design</h3>
+                        <p class="blog-card__excerpt">How stripping back to essentials can create more powerful user experiences and stronger brand recognition.</p>
+                        <a href="#" class="blog-card__link">Read Article</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-card__image">
+                        <img src="images/blog-3.jpg" alt="Sustainable Packaging Trends" loading="lazy">
+                        <span class="blog-card__category">Trends</span>
+                    </div>
+                    <div class="blog-card__content">
+                        <time datetime="2023-04-10" class="blog-card__date">April 10, 2023</time>
+                        <h3 class="blog-card__title">Sustainable Packaging Trends</h3>
+                        <p class="blog-card__excerpt">Innovative approaches to eco-conscious packaging that don't compromise on luxury aesthetics or functionality.</p>
+                        <a href="#" class="blog-card__link">Read Article</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="blog__cta">
+                <a href="#" class="btn btn--outline">View All Articles</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <div class="section__header">
+                        <span class="section__subtitle">Get In Touch</span>
+                        <h2 class="section__title">Let's Create Something Remarkable</h2>
+                    </div>
+                    
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <div class="contact__detail-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact__detail-content">
+                                <h4 class="contact__detail-title">Our Studio</h4>
+                                <p class="contact__detail-text">Birger Jarlsgatan 12<br>114 34 Stockholm, Sweden</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__detail">
+                            <div class="contact__detail-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 16.92V19C22 19.5304 21.7893 20.0391 21.4142 20.4142C21.0391 20.7893 20.5304 21 20 21H4C3.46957 21 2.96086 20.7893 2.58579 20.4142C2.21071 20.0391 2 19.5304 2 19V16.92M22 16.92C21.5365 16.7252 21.0335 16.6248 20.525 16.625H3.475C2.9665 16.6248 2.4635 16.7252 2 16.92M22 16.92V8C22 7.46957 21.7893 6.96086 21.4142 6.58579C21.0391 6.21071 20.5304 6 20 6H17.5L16.5 3H7.5L6.5 6H4C3.46957 6 2.96086 6.21071 2.58579 6.58579C2.21071 6.96086 2 7.46957 2 8V16.92" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact__detail-content">
+                                <h4 class="contact__detail-title">General Inquiries</h4>
+                                <p class="contact__detail-text">hello@henricstudio.com<br>+46 8 123 4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__detail">
+                            <div class="contact__detail-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact__detail-content">
+                                <h4 class="contact__detail-title">New Business</h4>
+                                <p class="contact__detail-text">work@henricstudio.com<br>+46 8 123 4568</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__social">
+                        <a href="#" class="contact__social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M17.5 7.5V7.501" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="contact__social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23 3C22.0424 3.67548 20.9821 4.19211 19.86 4.53C19.2577 3.83751 18.4573 3.34669 17.567 3.12393C16.6767 2.90116 15.7395 2.9572 14.8821 3.28445C14.0247 3.61171 13.2884 4.1944 12.773 4.95372C12.2575 5.71303 11.9877 6.61234 12 7.53V8.53C10.2426 8.57557 8.50127 8.18581 6.93101 7.39545C5.36074 6.60508 4.01032 5.43864 3 4C3 4 -1 13 8 17C5.94053 18.398 3.48716 19.0989 1 19C10 24 21 19 21 7.5C20.9991 7.22145 20.9723 6.94359 20.92 6.67C21.9406 5.66349 22.6608 4.39271 23 3V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="contact__social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="contact__social-link" aria-label="Behance">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.556 11.004H5V15H8.405C8.69829 15.0002 8.98648 14.9193 9.239 14.766C9.49152 14.6127 9.69899 14.3925 9.839 14.13C9.97901 13.8675 10.0463 13.5729 10.034 13.276C10.034 11.904 9.139 11.004 8.556 11.004V11.004Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 7H5V10H9.527C10.038 10 11 9.666 11 8.5C11 7.334 10.5 7 10 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 12.5C15 11.5 15.5 11 16.5 11C17.5 11 18 11.5 18 12.5C18 13.5 17.5 14 16.5 14H15V17M15 11H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact__form-container">
+                    <form id="contact-form" class="contact__form" novalidate>
+                        <div class="form__group">
+                            <input type="text" id="name" name="name" class="form__input" required>
+                            <label for="name" class="form__label">Full Name</label>
+                            <span class="form__error"></span>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="email" id="email" name="email" class="form__input" required>
+                            <label for="email" class="form__label">Email Address</label>
+                            <span class="form__error"></span>
+                        </div>
+                        
+                        <div class="form__group">
+                            <input type="text" id="subject" name="subject" class="form__input" required>
+                            <label for="subject" class="form__label">Subject</label>
+                            <span class="form__error"></span>
+                        </div>
+                        
+                        <div class="form__group">
+                            <textarea id="message" name="message" class="form__input form__textarea" required></textarea>
+                            <label for="message" class="form__label">Your Message</label>
+                            <span class="form__error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary form__submit">Send Message</button>
+                    </form>
+                    
+                    <div class="contact__form-success">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 24L22 30L32 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3 class="contact__form-success-title">Thank You!</h3>
+                        <p class="contact__form-success-text">Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+                        <button class="btn btn--outline contact__form-success-btn">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.7531876513402!2d18.07186431581445!3d59.33489838166414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6799554e3f%3A0xf4a6ef7a8f5c8b1f!2sBirger%20Jarlsgatan%2012%2C%20111%2045%20Stockholm%2C%20Sweden!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col footer__col--logo">
+                    <a href="index.html" class="footer__logo">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#fff"/>
+                            <path d="M18.5 32V16H22.5V28H28.5V32H18.5Z" fill="#000"/>
+                        </svg>
+                    </a>
+                    <p class="footer__text">Henric Studio is a premium creative agency specializing in branding, design, and digital experiences.</p>
+                </div>
+                
+                <div class="footer__col">
+                    <h4 class="footer__title">Explore</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#home" class="footer__link">Home</a></li>
+                        <li class="footer__item"><a href="#about" class="footer__link">About</a></li>
+                        <li class="footer__item"><a href="#services" class="footer__link">Services</a></li>
+                        <li class="footer__item"><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                        <li class="footer__item"><a href="#blog" class="footer__link">Journal</a></li>
+                        <li class="footer__item"><a href="#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__col">
+                    <h4 class="footer__title">Services</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Brand Strategy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Visual Identity</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Digital Design</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Content Creation</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Packaging Design</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Art Direction</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__col footer__col--newsletter">
+                    <h4 class="footer__title">Newsletter</h4>
+                    <p class="footer__text">Subscribe to our newsletter for the latest updates and insights.</p>
+                    
+                    <form class="footer__newsletter">
+                        <div class="footer__form-group">
+                            <input type="email" placeholder="Your email address" class="footer__input" required>
+                            <button type="submit" class="footer__submit" aria-label="Subscribe">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M17 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H17C19.2091 21 21 19.2091 21 17V7C21 4.79086 19.2091 3 17 3Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M17.5 7.5V7.501" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23 3C22.0424 3.67548 20.9821 4.19211 19.86 4.53C19.2577 3.83751 18.4573 3.34669 17.567 3.12393C16.6767 2.90116 15.7395 2.9572 14.8821 3.28445C14.0247 3.61171 13.2884 4.1944 12.773 4.95372C12.2575 5.71303 11.9877 6.61234 12 7.53V8.53C10.2426 8.57557 8.50127 8.18581 6.93101 7.39545C5.36074 6.60508 4.01032 5.43864 3 4C3 4 -1 13 8 17C5.94053 18.398 3.48716 19.0989 1 19C10 24 21 19 21 7.5C20.9991 7.22145 20.9723 6.94359 20.92 6.67C21.9406 5.66349 22.6608 4.39271 23 3V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Behance">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.556 11.004H5V15H8.405C8.69829 15.0002 8.98648 14.9193 9.239 14.766C9.49152 14.6127 9.69899 14.3925 9.839 14.13C9.97901 13.8675 10.0463 13.5729 10.034 13.276C10.034 11.904 9.139 11.004 8.556 11.004V11.004Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 7H5V10H9.527C10.038 10 11 9.666 11 8.5C11 7.334 10.5 7 10 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 12.5C15 11.5 15.5 11 16.5 11C17.5 11 18 11.5 18 12.5C18 13.5 17.5 14 16.5 14H15V17M15 11H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2023 Henric Studio. All rights reserved.</p>
+                
+                <ul class="footer__legal">
+                    <li class="footer__legal-item"><a href="#" class="footer__legal-link">Privacy Policy</a></li>
+                    <li class="footer__legal-item"><a href="#" class="footer__legal-link">Terms of Service</a></li>
+                    <li class="footer__legal-item"><a href="#" class="footer__legal-link">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 20V4M12 4L5 11M12 4L19 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Google Maps API (loaded only on contact page) -->
+    <script>
+        // Load Google Maps API only when needed
+        if(window.location.hash === '#contact') {
+            const script = document.createElement('script');
+            script.src = 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap';
+            script.async = true;
+            script.defer = true;
+            document.body.appendChild(script);
+            
+            window.initMap = function() {
+                // Initialize map
+                const location = { lat: 59.334898, lng: 18.071864 };
+                const map = new google.maps.Map(document.querySelector('.contact__map'), {
+                    zoom: 15,
+                    center: location,
+                    styles: [
+                        // Custom map styles would go here
+                    ]
+                });
+                
+                new google.maps.Marker({
+                    position: location,
+                    map: map,
+                    title: 'Henric Studio'
+                });
+            };
+        }
+    </script>
+</body>
+</html>
